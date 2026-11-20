@@ -3,31 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Silvia Sanvicente — cybersecurity specialist and PhD researcher working on post-quantum cryptography, digital security and privacy.">
+  <meta name="description" content="Silvia Sanvicente Garcia — cybersecurity specialist and PhD researcher working on post-quantum cryptography, secure systems and privacy.">
   <meta name="theme-color" content="#ffffff">
-  <title>Silvia Sanvicente</title>
+  <title>Silvia Sanvicente | Cybersecurity & Cryptography</title>
   <style>
-    :root { color-scheme: light; }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; background: #fff; color: #222; font: 16px/1.65 Arial, Helvetica, sans-serif; }
-    main { max-width: 850px; margin: 0 auto; padding: 56px 27px 80px; }
-    h1 { font-size: 2.15rem; font-weight: 650; letter-spacing: -.045em; margin: 0 0 4px; line-height: 1.2; }
-    h2 { font-size: 1.25rem; letter-spacing: -.02em; margin: 0 0 14px; }
-    p { margin: 0 0 13px; }
-    a { color: #1558a5; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    a:focus-visible { outline: 2px solid #1558a5; outline-offset: 3px; }
-    .subtitle { color: #555; margin-bottom: 9px; }
-    .links { font-size: .95rem; margin: 12px 0 26px; }
-    .links a { margin-right: 16px; display: inline-block; }
-    section { border-top: 1px solid #d9d9d9; margin-top: 28px; padding-top: 23px; }
-    ul { padding-left: 20px; margin: 7px 0 0; }
-    li { padding-left: 2px; margin-bottom: 10px; }
-    .muted { color: #666; }
-    .date { color: #656565; white-space: nowrap; }
-    footer { border-top: 1px solid #ddd; margin-top: 34px; padding-top: 16px; color: #777; font-size: .86rem; }
-    @media (max-width: 600px) { main { padding: 34px 20px 58px; } h1 { font-size: 1.9rem; } .links a { margin-right: 11px; margin-bottom: 4px; } }
+    :root { color-scheme: light; --ink:#262626; --muted:#626262; --line:#e4e4e4; --link:#205c9f; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:#fff; color:var(--ink); font:16px/1.68 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; }
+    main { max-width:800px; margin:auto; padding:64px 28px 84px; }
+    h1 { font-size:2.3rem; font-weight:650; line-height:1.2; letter-spacing:-.045em; margin:0 0 8px; }
+    h2 { font-size:1.22rem; font-weight:650; letter-spacing:-.02em; margin:0 0 15px; }
+    p { margin:0 0 14px; }
+    a { color:var(--link); text-decoration:none; text-underline-offset:3px; }
+    a:hover { text-decoration:underline; }
+    a:focus-visible { outline:2px solid var(--link); outline-offset:3px; }
+    .subtitle { color:var(--muted); font-size:1.02rem; margin-bottom:13px; }
+    .links { margin:0 0 30px; font-size:.95rem; }
+    .links a { display:inline-block; margin-right:20px; }
+    section { border-top:1px solid var(--line); padding-top:23px; margin-top:27px; }
+    ul { list-style:none; padding:0; margin:0; }
+    li { margin:0 0 15px; }
+    li:last-child { margin-bottom:0; }
+    .meta { display:block; font-size:.91rem; color:var(--muted); }
+    .small { color:var(--muted); font-size:.93rem; }
+    .inline-link { font-size:.93rem; white-space:nowrap; }
+    footer { border-top:1px solid var(--line); margin-top:35px; padding-top:17px; color:var(--muted); font-size:.86rem; }
+    @media (max-width:600px) { main { padding:36px 21px 62px; } h1 { font-size:2rem; } .links a { margin-right:16px; margin-bottom:5px; } }
   </style>
 </head>
 <body>
@@ -35,45 +37,78 @@
     <header>
       <h1>Silvia Sanvicente</h1>
       <p class="subtitle">Cybersecurity Specialist · PhD Researcher · Post-Quantum Cryptography</p>
-      <p class="links">
+      <nav class="links" aria-label="Profile links">
         <a href="mailto:contact@silviasanvicente.com">Email</a>
         <a href="https://www.linkedin.com/in/silvia-sanvicente/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </p>
+        <a href="https://github.com/silvduck" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
     </header>
 
     <section id="about">
-      <h2>About Me</h2>
-      <p>I am a cybersecurity specialist at <strong>ITechGrup by Plexus </strong> and a PhD researcher at the <strong>University of Lleida</strong>, in the Cryptography and Graphs research group.</p>
-      <p>My work focuses on <strong>post-quantum cryptography</strong>, Zero Trust architectures, digital identity and privacy. I work at the intersection of cybersecurity engineering, research and innovation, with a particular interest in how cryptographic systems can remain secure in the quantum era.</p>
-      <p>I hold a BSc in Computer Engineering from the <strong>Universitat Autònoma de Barcelona (UAB)</strong> and an MSc in Cybersecurity and Privacy from the <strong>Universitat Oberta de Catalunya (UOC)</strong>.</p>
+      <h2>About</h2>
+      <p>I'm a cybersecurity specialist at <strong>ITechGrup by Plexus</strong> and a PhD researcher in the <strong>Cryptography &amp; Graphs Research Group</strong> at the <strong>University of Lleida</strong>.</p>
+      <p>My work spans applied cryptography, security architecture, identity and access management, and the design of secure systems. I have contributed to R&amp;D initiatives involving <strong>post-quantum cryptography</strong>, including the INCIBE-supported <strong>Quantum Zero Trust (QZT)</strong> project, with a focus on bringing emerging cryptographic solutions into real-world environments.</p>
+      <p>My doctoral research explores cryptographic protocols for the post-quantum transition. I am particularly interested in privacy-preserving systems, zero-knowledge techniques and electronic voting. I also enjoy making cybersecurity research accessible through talks and outreach.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research &amp; Publications</h2>
+      <ul>
+        <li>
+          <strong>Decision Tree Based Inference of Lightning Network Client Implementations</strong>
+          <span class="meta">Pol Espinasa-Vilarrasa, Sílvia Sanvicente, Cristina Pérez-Solà &amp; Jordi Herrera-Joancomartí · MDAI 2024 · Springer, Lecture Notes in Computer Science</span>
+          Research on inferring Lightning Network client implementations from observable network information.
+          <a class="inline-link" href="https://portalrecerca.uab.cat/en/publications/decision-tree-based-inference-of-lightning-network-client-impleme/" target="_blank" rel="noopener noreferrer">Publication ↗</a>
+          · <a class="inline-link" href="https://ddd.uab.cat/pub/caplli/2024/1a377a3febc7/Decision_Tree_Based_Inference_of_Lightning_Network_Client_Implementations.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a>
+        </li>
+      </ul>
+      <p class="small" style="margin-top:15px">Research interests: post-quantum cryptography, zero-knowledge proofs, privacy-preserving protocols, electronic voting, blockchain security and digital identity.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Cybersecurity Specialist</strong> · ITechGrup by Plexus <span class="meta">2024–present · Barcelona, Spain</span> Cybersecurity architecture and innovation projects, including post-quantum cryptography, Zero Trust, IAM, risk assessments and technical validation.</li>
+        <li><strong>Technical Consultant</strong> · KPMG Microsoft Business Solutions <span class="meta">2022–2024 · Malta</span> Azure cloud security, identity and access management with Microsoft Entra ID, and Dynamics 365 application security.</li>
+        <li><strong>Cybersecurity Researcher</strong> · Universitat Autònoma de Barcelona <span class="meta">2021–2022 · Barcelona, Spain</span> Blockchain security research focused on Bitcoin and the Lightning Network.</li>
+        <li><strong>Technical Consultant</strong> · Inergy <span class="meta">2020–2021 · Barcelona, Spain</span> Software development for applications in the energy sector.</li>
+      </ul>
     </section>
 
     <section id="recognition">
-      <h2>Recognition &amp; Activities</h2>
+      <h2>Recognition &amp; Community</h2>
       <ul>
-        <li><span class="date">2025 —</span> <strong>Special Mention in Cybersecurity, DonaTIC Awards</strong>, Generalitat de Catalunya. <a href="https://politiquesdigitals.gencat.cat/ca/ciutadania/donatic/premis-dona-tic/guardonades2025/" target="_blank" rel="noopener noreferrer">Official announcement</a>.</li>
+        <li><strong>Special Mention in Cybersecurity — DonaTIC Awards</strong> <span class="meta">2025 · Government of Catalonia</span> <a class="inline-link" href="https://politiquesdigitals.gencat.cat/ca/ciutadania/donatic/premis-dona-tic/guardonades2025/" target="_blank" rel="noopener noreferrer">Award announcement ↗</a></li>
+        <li><strong>Post-Quantum Cryptography Expert Pool</strong> <span class="meta">2026 · European Cybersecurity Competence Centre (ECCC)</span></li>
+        <li><strong>Technology outreach</strong> <span class="meta">Young IT Girls</span> Volunteering in activities encouraging girls to explore technology and engineering.</li>
       </ul>
     </section>
 
-    <section id="talks">
-      <h2>Selected Talks &amp; Outreach</h2>
+    <section id="speaking">
+      <h2>Selected Talks</h2>
       <ul>
-        <li><span class="date">2025 —</span> <strong>Quantum Zero Trust (QZT)</strong>, MEMEnginy conference, UAB. A talk about incorporating post-quantum cryptography into cybersecurity architectures. <a href="https://www.memenginy.cat/edicions/v2025/conferencies/" target="_blank" rel="noopener noreferrer">Event details</a>.</li>
+        <li><strong>Data Security, Artificial Intelligence and Quantum Computing</strong> <span class="meta">26 November 2026 · University of Girona / Casa de Cultura de Girona</span> <a class="inline-link" href="https://www.udg.edu/ca/udg/detall-activitats/eventid/67268" target="_blank" rel="noopener noreferrer">Event details ↗</a></li>
+        <li><strong>Quantum Zero Trust (QZT)</strong> <span class="meta">2025 · MEMEnginy, Universitat Autònoma de Barcelona</span> <a class="inline-link" href="https://www.memenginy.cat/edicions/v2025/conferencies/" target="_blank" rel="noopener noreferrer">Event details ↗</a></li>
       </ul>
     </section>
 
-    <section id="interests">
-      <h2>Research Interests</h2>
-      <p>Post-quantum cryptography · Zero-knowledge proofs · Privacy-preserving protocols · Electronic voting · Digital identity · Zero Trust security</p>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>PhD in Post-Quantum Cryptography</strong> <span class="meta">University of Lleida · In progress</span></li>
+        <li><strong>Postgraduate Degree in IT Project Management</strong> <span class="meta">Universitat Oberta de Catalunya · 2025</span></li>
+        <li><strong>MSc in Cybersecurity and Privacy</strong> <span class="meta">Universitat Oberta de Catalunya · 2022</span></li>
+        <li><strong>BSc in Computer Engineering</strong> <span class="meta">Universitat Autònoma de Barcelona · 2021</span></li>
+      </ul>
+      <p class="small" style="margin-top:16px">Selected credentials: TU Delft — Quantum-safe Digital Infrastructures; ISMS Forum — CCSP; SUSE NeuVector; Microsoft Security, Compliance and Identity Fundamentals.</p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>For research collaborations, speaking invitations or professional enquiries, feel free to email me at <a href="mailto:contact@silviasanvicente.com">contact@silviasanvicente.com</a>.</p>
+      <p>I'm happy to connect about research, cybersecurity, speaking opportunities and collaborations. Reach me at <a href="mailto:contact@silviasanvicente.com">contact@silviasanvicente.com</a>.</p>
     </section>
 
-    <footer>© <span id="year">2026</span> Silvia Sanvicente · Last updated November 2026</footer>
+    <footer>© 2026 Silvia Sanvicente · Updated November 2026</footer>
   </main>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
